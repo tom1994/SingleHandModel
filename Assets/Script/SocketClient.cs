@@ -75,6 +75,8 @@ public class SocketClient : MonoBehaviour
 			// Create a TCP/IP  socket.
 			client = new Socket(AddressFamily.InterNetwork,
 				SocketType.Stream, ProtocolType.Tcp);
+			//client = new Socket(AddressFamily.InterNetwork,
+			//	SocketType.Dgram, ProtocolType.Udp);
 			client.Connect(remoteEP);
 			if (client.Connected)
 			{
